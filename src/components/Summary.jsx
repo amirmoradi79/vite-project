@@ -1,4 +1,20 @@
+import { useEffect } from "react";
+import { useSummaryContext } from "../contexts/SummaryContext";
+
+async function fetchData() {
+  const response = await fetch();
+  return await response.json();
+}
 export function Summary() {
+  const { data, dispatch } = useSummaryContext();
+  console.log(data);
+  useEffect(() => {
+    const data = fetchData();
+    dispatch({
+      type: "setFetchData",
+      payload: data,
+    });
+  }, []);
   return (
     <>
       <div className="flex flex-col space-y-7 bg-slate-100 rounded-xl w-64 p-4">

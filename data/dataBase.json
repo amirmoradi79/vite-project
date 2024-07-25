@@ -1,0 +1,24 @@
+{
+  "weather": [
+    {
+      "categor": "Reaction",
+      "score": 80,
+      "icon": "./fff"
+    },
+    {
+      "categor": "Memory",
+      "score": 92,
+      "icon": "./fff"
+    },
+    {
+      "categor": "Varbel",
+      "score": 61,
+      "icon": "./fff"
+    },
+    {
+      "categor": "Visual",
+      "score": 72,
+      "icon": "./fff"
+    }
+  ]
+}
